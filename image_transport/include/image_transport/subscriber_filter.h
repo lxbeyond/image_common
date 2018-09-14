@@ -35,7 +35,7 @@
 #ifndef IMAGE_TRANSPORT_SUBSCRIBER_FILTER_H
 #define IMAGE_TRANSPORT_SUBSCRIBER_FILTER_H
 
-#include <message_filters/simple_filter.h>
+#include <ros2_message_filters/simple_filter.h>
 #include "image_transport/image_transport.h"
 
 namespace image_transport {

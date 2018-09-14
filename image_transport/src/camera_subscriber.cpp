@@ -35,8 +35,8 @@
 #include "image_transport/camera_subscriber.h"
 #include "image_transport/subscriber_filter.h"
 #include "image_transport/camera_common.h"
-#include <message_filters/subscriber.h>
-#include <message_filters/time_synchronizer.h>
+#include <ros2_message_filters/subscriber.h>
+#include <ros2_message_filters/time_synchronizer.h>
 
 inline void increment(int * value)
 {

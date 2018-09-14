@@ -13,7 +13,7 @@ endif()
 
 find_package(ament_cmake_ros REQUIRED)
 
-find_package(message_filters REQUIRED)
+find_package(ros2_message_filters REQUIRED)
 find_package(pluginlib REQUIRED)
 find_package(rclcpp REQUIRED)
 find_package(sensor_msgs REQUIRED)
@@ -32,7 +32,7 @@ add_library(${PROJECT_NAME}
 )
 
 ament_target_dependencies(${PROJECT_NAME}
-  "message_filters"
+  "ros2_message_filters"
   "pluginlib"
   "rclcpp"
   "sensor_msgs"
@@ -80,7 +80,7 @@ install(
 ament_export_include_directories(include)
 ament_export_libraries(${PROJECT_NAME})
 
-ament_export_dependencies(message_filters)
+ament_export_dependencies(ros2_message_filters)
 ament_export_dependencies(rclcpp)
 ament_export_dependencies(sensor_msgs)
 ament_export_dependencies(pluginlib)
